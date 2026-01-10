@@ -66,23 +66,48 @@
     </section>
 
     <!-- RODAPÉ -->
-    <footer>
-        © 2025 - Moto Grupo ROTA 21 RJ - Todos os direitos reservados.
-    </footer>
-
     <footer class="rodape">
-    <p>Nos siga também nas redes sociais</p>
 
-    <div class="redes-sociais">
-        <a href="https://www.instagram.com/https://www.instagram.com/rota.21oficial?igsh=dWxzNGFlMjZ0d3Ry" target="_blank">
-            <img src="imagens/instagram.png" alt="Instagram Rota 21">
-        </a>
+  <p>© 2025 - Moto Grupo ROTA 21 RJ - Todos os direitos reservados.</p>
 
-        <a href="https://www.facebook.com/https://www.facebook.com/share/17tgovbkbe/?mibextid=wwXIfr" target="_blank">
-            <img src="imagens/facebook.png" alt="Facebook Rota 21">
-        </a>
-    </div>
+  <p>Nos siga também nas redes sociais</p>
+
+  <div class="redes-sociais">
+    <a href="https://www.instagram.com/rota.21oficial/" target="_blank">
+      <img src="imagens/instagram.png" alt="Instagram Rota 21">
+    </a>
+
+    <a href="https://www.facebook.com/share/17tgovbkbe/?mibextid=wwXIfr" target="_blank">
+      <img src="imagens/facebook.png" alt="Facebook Rota 21">
+    </a>
+  </div>
+
+  <hr>
+
+  <p>Compartilhe o site do Rota 21</p>
+
+  <div class="compartilhar">
+    <a
+      href="https://wa.me/?text=Confira%20o%20site%20do%20Rota%2021:%20https://clessfyre-source.github.io/Rota-21-Moto-Grupo/"
+      target="_blank"
+      class="btn-share whatsapp"
+    >
+      WhatsApp
+    </a>
+
+    <button class="btn-share copiar" onclick="copiarLink()">
+      Copiar link
+    </button>
+  </div>
+
 </footer>
+
+<script>
+function copiarLink() {
+  navigator.clipboard.writeText(window.location.href);
+  alert("Link copiado! Agora é só colar no WhatsApp, Instagram ou TikTok 🤘");
+}
+</script>
 
 </body>
 </html>
