@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Moto Grupo ROTA 21 RJ</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fundo-contato">
+
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="galeria/index.html">Galeria</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===========================
+          SEÇÃO CONTATO
+    =========================== -->
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form action="enviar_contato.php" method="post">
+
+            <div class="grupo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            </div>
+
+            <div class="grupo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="grupo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+            </div>
+
+            <div class="grupo">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Sobre o que deseja falar?">
+            </div>
+
+            <div class="grupo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+        </form>
+    </section>
+
+    <!-- BOTÃO VOLTAR -->
+    <a href="index.html" class="btn-voltar">⬅ Voltar para o Início</a>
+<footer class="rodape">
+    <p>Nos siga também nas redes sociais</p>
+
+    <div class="redes-sociais">
+        <a href="https://www.instagram.com/SEU_INSTAGRAM" target="_blank">
+            <img src="imagens/instagram.png" alt="Instagram Rota 21">
+        </a>
+
+        <a href="https://www.facebook.com/SEU_FACEBOOK" target="_blank">
+            <img src="imagens/facebook.png" alt="Facebook Rota 21">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
