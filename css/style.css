@@ -963,3 +963,31 @@ body {
 
 .whatsapp { background-color: #25D366; }
 .copiar   { background-color: #555; }
+/* ===== AJUSTE PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        background-color: #000;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #222;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+}
