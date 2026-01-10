@@ -1027,12 +1027,33 @@ nav ul li a {
 
 /* ===== AJUSTES PARA CELULAR ===== */
 @media (max-width: 768px) {
-
-    /* MENU MAIS COMPACTO */
     nav ul {
         display: flex;
-        flex-direction: column;
-        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+
+    nav ul li {
+        margin: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
     }
 
     nav ul li {
@@ -1050,10 +1071,21 @@ nav ul li a {
         text-align: center;
     }
 
-    /* ESCONDE OS BRASÕES NO CELULAR */
+  @media (max-width: 768px) {
     .brasao {
-        display: none;
+        width: 70px;
+        opacity: 0.85;
     }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .titulo-central h1 {
+        font-size: 22px;
+    }
+}
+
 
     /* TEXTO CENTRAL */
     .titulo-central h1 {
