@@ -691,10 +691,7 @@ body {
   margin-top: 10px;
   border-top: 2px solid #ffc227;
 }
-nav a.eventos {
-  color: #ffc227;
-  font-weight: bold;
-}
+
 .rodape-voltar {
   text-align: center;
   padding: 40px 20px;
@@ -915,24 +912,7 @@ nav a.eventos {
         grid-template-columns: 1fr;
     }
 }
-.midia-foto {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-body {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-@media (max-width: 600px) {
-  body {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-  }
-}
+
 .rodape {
   background: #111;
   color: #fff;
@@ -963,108 +943,8 @@ body {
 
 .whatsapp { background-color: #25D366; }
 .copiar   { background-color: #555; }
-/* ===== AJUSTE PARA CELULAR ===== */
-@media (max-width: 768px) {
 
-    nav {
-        width: 100%;
-        background-color: #000;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #222;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 12px 0;
-        font-size: 18px;
-    }
-}nav {
-    background: #000;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 5px 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-}
-@media (max-width: 768px) {
-
-    nav ul {
-        justify-content: center;
-    }
-
-    nav ul li a {
-        font-size: 0.95rem;
-        padding: 6px 8px;
-    }
-}
-
-/* ===== AJUSTES PARA CELULAR ===== */
-@media (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 10px 0;
-    }
-
-    nav ul li {
-        margin: 5px 8px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-}
-
-
-    nav ul li {
-        margin: 5px 8px;
-    }
-
-    nav ul li a {
-        font-size: 14px;
-    }
-}
-
-    }
-
-    nav ul li {
-        padding: 8px 0;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-
-    /* HEADER */
+ /* HEADER */
     .header {
         flex-direction: column;
         padding: 20px 10px;
@@ -1097,5 +977,76 @@ nav ul li a {
         font-size: 14px;
         padding: 10px;
         margin-top: 10px;
+    }
+
+
+
+    
+/* ===== FUNDO AJUSTADO DAS PÁGINAS ===== */
+body {
+    background-size: contain;   /* ajusta a imagem dentro da tela */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;      
+        background-position: top;    
+        background-attachment: scroll; 
+    }
+}
+/* ===== MENU PRINCIPAL FLEXBOX (DEFINITIVO) ===== */
+
+/* Contêiner do menu */
+nav {
+    background: #000;          /* Fundo do menu */
+    padding: 10px 0;
+}
+
+/* Lista de links */
+nav ul {
+    display: flex;             /* Ativa Flexbox */
+    flex-direction: row;       /* Itens em linha */
+    justify-content: center;   /* Centraliza horizontalmente */
+    align-items: center;       /* Alinha verticalmente */
+    flex-wrap: wrap;           /* Permite quebrar linha se necessário */
+    gap: 15px;                 /* Espaço entre os itens */
+    list-style: none;          /* Remove marcadores */
+    padding: 0;
+    margin: 0;
+}
+
+/* Itens individuais */
+nav ul li {
+    margin: 0;                 /* Remove margens desnecessárias */
+}
+
+/* Links do menu */
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffc227;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+/* Efeito hover */
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* ===== RESPONSIVO PARA CELULAR ===== */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center; /* Centraliza no mobile */
+        gap: 10px;               /* Reduz espaço entre links */
+    }
+
+    nav ul li a {
+        font-size: 14px;         /* Ajusta tamanho da fonte */
+        padding: 6px 8px;        /* Ajusta padding */
     }
 }
