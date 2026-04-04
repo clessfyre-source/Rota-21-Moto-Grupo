@@ -13,28 +13,10 @@
     <p>Bem-vindo à nossa página!</p>
 
     <div class="midia-grid">
-        <img src="../midia/bananal/foto1.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto2.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto3.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto4.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto5.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto6.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto7.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto8.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto9.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto10.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto11.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto12.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto13.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto14.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto15.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto16.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto17.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto18.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto19.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto20.jpg" class="midia-foto">
-        <img src="../midia/bananal/foto21.jpg" class="midia-foto">
-    </div>
+    <img src="../midia/bananal/foto1.jpg" class="midia-foto">
+    <img src="../midia/bananal/foto2.jpg" class="midia-foto">
+    <img src="../midia/bananal/foto3.jpg" class="midia-foto">
+</div>
 
 </main>
 
