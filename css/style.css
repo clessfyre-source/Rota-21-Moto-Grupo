@@ -1065,9 +1065,3 @@ nav ul li a:hover {
         font-size: 14px;
         padding: 6px 8px;
     }
-}.card-role img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
