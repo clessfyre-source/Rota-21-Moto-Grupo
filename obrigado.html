@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagem Enviada - Rota 21</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fundo-contato">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="galeria/index.html">Galeria</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="contato">
+        <h2>Mensagem enviada com sucesso! ✅</h2>
+
+<p>Obrigado por entrar em contato com o Moto Grupo ROTA 21 RJ.</p>
+
+<p>Sua mensagem foi recebida e retornaremos em breve.</p>
+
+<p>Voltando para a página de contato em <span id="contador">5</span> segundos...</p>
+
+<a href="index.html">Voltar para o Início</a>.
+        </p>
+
+        <div style="text-align:center; margin-top:30px;">
+            <a href="index.html" class="btn-enviar">Voltar para o Início</a>
+        </div>
+    </section>
+
+    <script>
+let segundos = 5;
+
+const contador = document.getElementById("contador");
+
+const intervalo = setInterval(function() {
+    segundos--;
+    contador.innerText = segundos;
+
+    if (segundos <= 0) {
+        clearInterval(intervalo);
+        window.location.href = "contato.html";
+    }
+}, 1000);
+</script>
+</body>
+</html>
